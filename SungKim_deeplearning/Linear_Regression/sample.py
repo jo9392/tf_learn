@@ -41,6 +41,6 @@ sess_ph.run(tf.global_variables_initializer())
 
 for step in range(2001):
 	cost_val, W_val, b_val, _ = sess_ph.run([cost_ph, W_ph, b_ph, train_ph],
-															feed_dict = {x_ph: [1,2,3,4,5], y_ph:[2.1, 3.1, 4.1, 5.1, 6.1]})) 
+				    feed_dict = {x_ph: [1,2,3,4,5], y_ph:[2.1, 3.1, 4.1, 5.1, 6.1]})) 
 	if step % 20 == 0: #20번에 한 번씩 출력
 			print(step, cost_val, W_val, b_val)
